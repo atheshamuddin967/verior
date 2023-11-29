@@ -1,0 +1,76 @@
+@import "../styles/Global.scss";
+.service-box{
+ 
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+top: 0;
+    left: -350px;
+    font-family: $mont;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 0.8s;
+    width: 100%;
+    h6{
+        text-align: center;
+        margin-top: 10px;
+        font-family: $poppins;
+        font-size: 20px;
+        z-index: 1;
+    }
+}
+.iconbox{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+  color: $verior;
+}
+
+.service-box2{
+   content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background-color:rgba(130, 88, 234, );
+    transition: all ease-in-out 0.3s;
+}
+.service-box:hover:before{
+    width: 100%;
+
+}
+.service-box:hover{
+  color: white;
+}
+.main-box{
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    img{
+        max-width: 100%;
+        border-radius: 10px;
+        height: 250px;
+    }
+    position: relative;
+    h6{
+        text-align: center;
+        font-size: 20px;
+        font-family: $poppins;
+    }   
+}
+.main-box:hover .service-box{
+    left: 0;
+}
+.main-box:hover .service-box2{
+    width: 100%;
+}

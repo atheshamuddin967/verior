@@ -1,0 +1,25 @@
+@import "../styles//Global.scss";
+.banner{
+    background-color: $verior;
+    width: 100%;
+    img{
+        max-width: 100%;
+    }
+}
+.banner-detail{
+    color: white;
+  h2{
+    font-family: $poppins;
+    font-size: 55px;
+    font-weight: 600;
+  }
+  h6{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $poppins;
+  }
+  p{
+    font-family: $mont;
+    font-size: 18px;
+  }
+}
