@@ -1,0 +1,131 @@
+@import "../../styles/Global.scss";
+.footer{
+    background-color: $verior;
+  margin-top:30px ;
+  color: white;
+  font-family: $poppins;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+.logoimg{
+    img{
+        max-width: 100%;
+        // height: 100px;
+    }
+    h4{
+        font-weight: 600;
+        line-height: 40px;
+        margin: 20px 0;
+text-align: left;
+
+    }
+}
+.pagelist{
+    ul{
+        margin: 0 0;
+        padding: 0 0;
+    }
+    li{
+        list-style: none;
+        margin: 10px ;
+        position: relative;
+    }
+    li::before{
+        position: absolute;
+        content: "\f124";
+        left: -25px;
+        top: 0;
+        font-family: "fontawesome";
+        transform: rotate(50deg);
+    }
+    h3{
+        // text-align: center;
+        margin-bottom: 10px;
+    }
+}
+.contact{
+    h3{
+        // text-align: center;
+        margin-bottom: 10px;   
+    }
+    ul{
+        margin: 0 0;
+        padding: 0 0;
+    }
+    li{
+        list-style: none;
+        margin: 15px 0 ;
+        position: relative;
+    }
+}
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.follow{
+    text-align: center;
+    h3{
+        // text-align: center;
+        margin-bottom: 10px;   
+    }
+    ul{
+        padding: 0 0;
+        margin: 0 0;
+    }
+    li{
+        list-style: none;
+        display: inline-table;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: $verior;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 5px;
+        font-size: 20px;
+        a{
+            color: $verior;
+         
+        }
+    }
+    li:hover{
+        background-color: $main;
+       a{ color: white;}
+    }
+    h6{
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+.subscribe{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    position: relative;
+    input{
+        width: 100%;
+        border: 0;
+        
+    }
+    button{
+        padding: 0 0;
+        margin: 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $verior;
+        color: white;
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        border: 1px solid white;
+    }
+    input:focus-visible {
+        outline: -webkit-focus-ring-color auto 0px !important;
+    }
+  
+}

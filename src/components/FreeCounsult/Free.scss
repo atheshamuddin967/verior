@@ -1,0 +1,32 @@
+@import"../../styles/Global.scss";
+.formslayout{
+    max-width: 600px !important;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: $poppins;
+
+    h5{
+        margin: 10px 0 20px 0;
+        color: $verior;
+    }
+    textarea::placeholder{
+        color: $main !important;
+        height: 100%;
+padding: 0 0;
+margin:  0 0;    }
+button{
+    background-color: $verior;
+    color: white;
+}
+input::placeholder{
+    color: $main !important;
+}
+}
+.const{
+    img{
+        border-radius: 10px;
+        max-width: 100%;
+    }
+}
