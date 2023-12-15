@@ -2,6 +2,7 @@ import ServicesData from "../../Data/Data";
 import SericeItem from "./SericeItem";
 import "./Services.scss";
 
+import "aos/dist/aos.css";
 function Services() {
   return (
     <div className="content-section" id="Services">
@@ -13,7 +14,7 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="row space">
+        <div className="row space ">
           {ServicesData.map((item) => (
             <SericeItem item={item} />
           ))}

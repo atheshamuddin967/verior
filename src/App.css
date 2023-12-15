@@ -1,8 +1,8 @@
-.contentContainer {
+/* .contentContainer {
   height: 100vh;
   overflow: scroll;
   width: 100%;
-}
+} */
 .sticky-top {
   position: sticky !important;
   top: 0;

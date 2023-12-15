@@ -60,3 +60,11 @@ nav{
     position: sticky !important;
     top: 0;
 }
+@media only screen and (max-width: 979px) {
+    .nav-item::before{
+       display: none;
+    }
+    .nav-item .active::before{
+      display: none;
+    }
+}

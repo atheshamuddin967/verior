@@ -23,3 +23,50 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 967px){
+  .banner-detail h2 {
+    font-family: "Poppins";
+    font-size: 34px;
+    font-weight: 600;
+}
+.banner-detail h6 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+}
+@media only screen and (max-width: 767px){
+  .banner-detail h2 {
+    font-family: "Poppins";
+    font-size: 23px;
+    font-weight: 600;
+}.banner-detail h6 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+}.banner-detail p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 575px){
+  .banner{
+    position: relative;
+   
+  }
+  .banner::before{
+    background-color: rgba(0,0,0,0.7);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .banner-detail{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    left: 10%;
+    right: 10%;
+  }
+}

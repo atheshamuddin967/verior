@@ -1,13 +1,13 @@
 function SericeItem({ item }: any) {
-  const maxCharacters = 200;
+  const maxWords = 200;
   const truncatedDescription =
-    item.description.length > maxCharacters
-      ? `${item.description.substring(0, maxCharacters)}...`
+    item.description.length > maxWords
+      ? `${item.description.substring(0, maxWords)}...`
       : item.description;
 
   return (
-    <div className="col-sm-4">
-      <div className="main-box">
+    <div className="col-md-4 col-sm-6 mb-3 ">
+      <div className="main-box " data-aos="fade-up">
         <div className="iconBox">
           <img src={item.icon} alt="" />
         </div>

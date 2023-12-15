@@ -1,5 +1,5 @@
 import "./footer.scss";
-import verior from "../../Images/VERIOR.png";
+
 import { Link } from "react-router-dom";
 import { LuPhone } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
@@ -9,17 +9,17 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
 
-function Footer() {
+function Footer({ open }: any) {
   return (
     <div className="footer">
       <div className="container">
         <div className="row space">
-          <div className="col-sm-3">
+          <div className="col-sm-3 col-6 mb-3">
             <div className="logoimg">
               <h4>Where ideas meet innovation – welcome to Verior</h4>
             </div>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-3 col-6 mb-3">
             <div className="pagelist">
               <h3>About</h3>
               <ul>
@@ -36,7 +36,7 @@ function Footer() {
                   <Link to="#Portfolio">Portfolio</Link>
                 </li>
                 <li>
-                  <Link to="#Free">Get A Quote</Link>
+                  <button onClick={open}>Get A Quote</button>
                 </li>
                 <li>
                   <Link to="#Book">Book free Consultation</Link>
@@ -44,7 +44,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-3 col-6 mb-3">
             <div className="contact">
               <h3>Contact us</h3>
               <ul>
@@ -65,7 +65,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-3 col-6 mb-3">
             <div className="follow">
               <h3>Follow us</h3>
               <li>
@@ -90,6 +90,14 @@ function Footer() {
                   <FaPaperPlane />
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="copy text-center">
+              All © rights reserved by Veiror
             </div>
           </div>
         </div>

@@ -14,10 +14,14 @@ function Whychose() {
           </div>
         </div>
         <div className="row ">
-          <div className="col-sm-6">
-            <div className="servicedetails">
+          <div className="col-sm-6 w">
+            <div
+              className="servicedetails"
+
+              // data-aos-once="true"
+            >
               <ul>
-                <li>
+                <li data-aos="fade-right">
                   <div className="iconschose">
                     <FaLeaf />
                   </div>
@@ -51,7 +55,7 @@ function Whychose() {
                     future.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-right">
                   {" "}
                   <div className="iconschose">
                     <FaAnchor />
@@ -65,7 +69,7 @@ function Whychose() {
               </ul>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6 c">
             <div className="imgchoose">
               <img src={serviceimg} />
             </div>

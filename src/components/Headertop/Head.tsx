@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-function Head() {
+function Head({ open }: any) {
   return (
     <div className="head">
       <div className="container">
@@ -22,13 +22,13 @@ function Head() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
-                    <IoCallOutline className="icon" /> +923000000000
+                  <Link to="tel:923453531876">
+                    <IoCallOutline className="icon" /> 923453531876
                   </Link>
                 </li>{" "}
                 <li>
-                  <Link to="/">
-                    <MdOutlineMail className="icon" /> Verior@gmail.com
+                  <Link to="mailto:hr@verior.co">
+                    <MdOutlineMail className="icon" /> hr@verior.co
                   </Link>
                 </li>
               </ul>
@@ -54,7 +54,7 @@ function Head() {
                   </Link>
                 </li>
                 <li>
-                  <button>Get A Quote</button>
+                  <button onClick={open}>Get A Quote</button>
                 </li>
               </ul>
             </div>

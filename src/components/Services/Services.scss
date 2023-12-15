@@ -38,7 +38,7 @@ img{
     li{
         list-style: none;
         display: inline-table;
-        width: 48%;
+        width: 47%;
         padding: 20px 20px  0 20px;
         border-radius: 10px;
         margin: 5px;
@@ -78,4 +78,48 @@ img{
     width: 20px;
     height: 20px;
     font-size: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .main-box{
+        height: 350px;
+        overflow: hidden;
+    }
+    .servicedetails li{
+        display: block;
+        height: unset !important;
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+.c{
+    display: none;
+}
+.w{
+    width: 100% !important;
+}
+}
+@media only screen and (max-width: 575px) {
+    .main-box{
+        height: unset !important;
+        overflow: hidden;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .c{
+        display: unset;
+    }
+    .servicedetails li{
+        max-width: 400px;
+        // margin: 0 auto;
+    }
+   .w{
+    display: flex;
+    justify-content: center;
+   }
+   .imgchoose img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 }

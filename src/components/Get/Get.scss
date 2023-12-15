@@ -1,0 +1,42 @@
+@import "../../styles/Global.scss";
+.getLayout{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10000;
+    font-family: "poppins";
+}
+.getinner{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    min-width: 300px;
+    width: 100%;
+    position: relative;
+    button{
+        background-color: $verior;
+        color: white;
+    }
+    input{
+        min-width: 250px;
+    }
+}
+.closebtn{
+    button{
+        background-color: transparent;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        border: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}

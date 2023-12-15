@@ -1,5 +1,6 @@
 import Images from "../Images/Index";
 import "./Banner.scss";
+
 function Banner() {
   return (
     <div className="content-section" id="Home">
@@ -7,7 +8,7 @@ function Banner() {
         <div className="container">
           <div className="row rows">
             <div className="col-sm-6">
-              <div className="banner-detail">
+              <div className="banner-detail " data-aos="zoom-out-right">
                 <h2>Welcome To Verior</h2>
                 <h6>Leading top softwarehouse in pakistan</h6>
                 <p>

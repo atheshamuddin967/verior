@@ -44,6 +44,13 @@ text-align: left;
         // text-align: center;
         margin-bottom: 10px;
     }
+    button{
+        padding: 0 0;
+        background-color: transparent;
+        border: 0;
+        color: white;
+        
+    }
 }
 .contact{
     h3{
@@ -128,4 +135,7 @@ text-align: left;
         outline: -webkit-focus-ring-color auto 0px !important;
     }
   
+}
+.copy{
+    font-size: 10px;
 }

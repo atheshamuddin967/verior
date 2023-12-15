@@ -1,8 +1,8 @@
 import Images from "../../Images/Index";
 import "./Navar.scss";
 import { useState, useEffect, useRef } from "react";
-function Navbar() {
-  const [activeSection, setActiveSection] = useState("");
+function Navbar({ open }: any) {
+  const [activeSection, setActiveSection] = useState("Home");
 
   const observer: any = useRef(null);
 
@@ -10,7 +10,7 @@ function Navbar() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Adjust as needed
+      threshold: 0.1,
     };
 
     observer.current = new IntersectionObserver((entries) => {
@@ -37,7 +37,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className="navbar navbar-expand-lg sticky-top
+        className="navbar navbar-expand-lg 
       "
       >
         <div className="container">
@@ -98,14 +98,9 @@ function Navbar() {
                 </a>
               </li>{" "}
               <li className="nav-item">
-                <a
-                  className={`nav-link ${
-                    activeSection === "Free" ? "active" : ""
-                  }`}
-                  href="#Free"
-                >
+                <button className="nav-link" onClick={open}>
                   Get A Quote
-                </a>
+                </button>
               </li>
               <li className="nav-item">
                 <a

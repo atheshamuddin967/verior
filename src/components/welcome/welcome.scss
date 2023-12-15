@@ -10,3 +10,19 @@ color: $main;
         font-family: $mont;
     }
 }
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .aos-animate .fade-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+@media only screen and (max-width: 575px){
+
+    .welcome-detail{
+margin: 10px 0;
+    }
+}

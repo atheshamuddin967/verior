@@ -76,3 +76,45 @@ color: $main;
     background-color: $verior;
     color: white;
 }
+@media only screen and (max-width: 767px){
+    .headerlist2 button {
+        color: #8258ea;
+        background-color: white;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px 4px;
+        font-family: "Montserrat";
+        transition: all ease-in-out 0.3s;
+        border: 1px solid transparent;
+    }
+}
+@media only screen and (max-width: 575px){
+    .headerlist2 {
+        padding: 5px 0;
+        float: unset; 
+    }
+    .headerlist2 li {
+        list-style: none;
+        display: inline-flex;
+        margin: 0 5px;
+        font-size: 10px;
+    }.headerlist li {
+        list-style: none;
+        display: inline-flex;
+        margin: 0 5px;
+        color: white;
+        font-family: "Poppins";
+        font-size: 10px;
+        align-items: center;
+        transition: all ease-in-out 0.3s;
+    }
+}
+@media only screen and (max-width: 420px){
+    .headerlist{
+        display: none;
+    }
+    .icon {
+        font-size: 13px;
+        margin-right: 1px;
+    }
+}

@@ -1,12 +1,15 @@
 import Images from "../../Images/Index";
 import "./welcome.scss";
+
 function Welcome() {
   return (
     <div className="content-section" id="About">
       <div className="container">
         <div className="row space rows">
           <div className="col-sm-2">
-            <img src={Images.logo} alt="" />
+            <div className="s" data-aos="fade-up">
+              <img src={Images.logo} alt="" />
+            </div>
           </div>
           <div className="col-sm-10">
             <div className="welcome-detail">
